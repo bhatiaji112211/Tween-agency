@@ -1,0 +1,237 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(255,255,255,0.3) 100%, rgba(255,255,255,0.7371323529411764) 100%, rgba(255,255,255,1) 100%), url(../img/slide/microsoft-edge-FAaz8lkinzs-unsplash.jpg);
+    background-position:top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* navigation */
+nav{
+    width: 100%;
+    display: block;
+    background: none;
+}
+
+nav .navbar{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+nav .navbar h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+nav .navbar h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav .navbar .nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navbar ul li{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+nav .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .navbar ul li a:hover{
+    color:#38b083;
+    border-bottom: 1px solid #38b083;
+}
+
+nav .navbar .download{
+    width: 150px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #38b083;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+nav .navbar .download:hover{
+    width: 152px;
+    height: 42px;
+    transition: 0.3s;
+}
+
+nav .navbar .navbar-toggle{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: 1px solid #38b083;
+    float: right;
+    display: none;
+}
+
+nav .navbar .navbar-toggle .fa{
+    color: #38b083;
+    font-size: 2rem;
+}
+
+@media (max-width:1200px){
+    nav .navbar h1{
+        font-size: 2.5rem;
+    }
+
+    nav .navbar ul li{
+        margin: 0 0.8rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:992px){
+    nav .navbar .navbar-toggle{
+        display: block;
+    }
+    
+    nav .navbar  ul{
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        margin-right: 0;
+        background-color: #fff;
+        width: 100%;
+    }
+    nav .navbar ul li a{
+        color: #38b083;
+        font-size: 1.5rem;
+    }
+
+    nav .navbar ul li{
+        padding: 0.5rem 0;
+        padding-left: 10%;
+    }
+
+    .navbar .nav-item button{
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:767px){
+    nav .navbar h1{
+        font-size: 2.5rem;
+    }
+
+    nav .navbar .download{
+        width: 120px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    nav .navbar .navbar-toggle{
+        width: 2rem;
+        height: 2rem; 
+    }
+
+    nav .navbar .navbar-toggle .fa{
+        font-size: 1.5rem;
+    }
+
+    nav .navbar ul li a{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:535px){
+    nav .navbar h1{
+        font-size: 2rem;
+    }
+
+    nav .navbar .download{
+        width: 100px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    nav .navbar .navbar-toggle{
+        width: 1.8rem;
+        height: 1.8rem; 
+    }
+
+    nav .navbar .navbar-toggle .fa{
+        font-size: 1.2rem;
+    }
+
+    nav .navbar ul li a{
+        font-size: 1rem;
+    }
+}
+
+
+/* headings */
+.headings{
+    width: 60%;
+    margin-top: 8rem;
+}
+
+.headings h1{
+    font-size: 5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+@media (max-width:992px){
+    .headings{
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    .headings h1{
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width:767px){
+    .headings h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:560px){
+    .headings h1{
+        font-size: 3rem;
+    }
+}
