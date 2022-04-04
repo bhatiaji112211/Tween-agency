@@ -180,6 +180,9 @@ nav .navbar .navbar-toggle .fa{
 }
 
 @media (max-width:535px){
+    nav .navbar{
+        width: 100%;
+    }
     nav .navbar h1{
         font-size: 2rem;
     }
@@ -421,6 +424,10 @@ nav .navbar .navbar-toggle .fa{
     font-size: 0.9rem;
 }
 
+.my-btn:hover{
+    background-color: #000;
+}
+
 @media (max-width:992px){
     #service .service-item{
         width: 100%;
@@ -604,4 +611,122 @@ nav .navbar .navbar-toggle .fa{
         font-size: 0.6rem;
         word-spacing: 0.05rem;
     }
+}
+
+/* contact */
+#contact{
+    width: 60%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+#contact h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section label{
+    display: block;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: gray;
+    margin-left: 0.5rem;
+}
+
+.contact-section input{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+
+.contact-section select{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    color: gray;
+    font-size: 1rem;
+}
+
+.contact-section section option{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact-section .contact-item{
+    width: 30%;
+}
+
+.contact-section .big-item{
+    width: 100%;
+}
+
+.contact-section .big-item textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-section .big-item button{
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #198754;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact-section .big-item button:hover{
+    background-color: #000;
+}
+
+@media (max-width:992px){
+    .contact-section .contact-item{
+        width: 48%;
+    }
+}
+
+@media (max-width:667px){
+    #contact h3{
+        font-size: 2rem;
+    }
+
+    .contact-section .contact-item{
+        width: 100%;
+    }
+
+    .contact-section label{
+        font-size: 0.8rem;
+    }
+
+    .contact-section select{
+        font-size: 0.8rem;
+    }
+
+    .contact-section section option{
+        font-size: 0.6rem;
+    }
+
+    .contact-section .big-item button{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:535px){
+    #contact{
+        width: 80%;
+    }
+    
+    #contact h3{
+        font-size: 1.5rem;
+    }
+    
 }
