@@ -730,3 +730,32 @@ nav .navbar .navbar-toggle .fa{
     }
     
 }
+
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #07262e;
+    color: #fff;
+}
+
+footer .footer-item p{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+footer .footer-item i{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+@media (max-width:535px){
+    footer .footer-item {
+        margin: 0 auto;
+    }
+
+    footer .footer-item p{
+        margin-bottom: 0.5rem;
+    }
+}
