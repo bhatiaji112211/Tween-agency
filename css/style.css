@@ -201,6 +201,10 @@ nav .navbar .navbar-toggle .fa{
     nav .navbar .navbar-toggle .fa{
         font-size: 1.2rem;
     }
+    nav .navbar ul li{
+        padding-left:0;
+    }
+    
 
     nav .navbar ul li a{
         font-size: 1rem;
