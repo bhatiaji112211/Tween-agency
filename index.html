@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -138,27 +139,27 @@
     <section id="contact">
         <h3>Let's chat</h3>
         <section class="contact-section ">
-            <form action="#" class="flex-box">
+            <form onsubmit="data()" class="flex-box">
                <section class="contact-item">
-                    <label for="#">Full Name</label>
-                    <input type="text">
+                    <label>Full Name</label>
+                    <input type="text" id="fname" required>
                </section>
                <section class="contact-item">
-                    <label for="#">Email Address</label>
-                    <input type="email">
+                    <label>Email Address</label>
+                    <input type="email" id="email" required>
                </section>
                <section class="contact-item">
                     <label for="#">How did you know about us?</label>
                     <select name="options">
-                        <option value="1" selected>Choose a Subject</option>
-                        <option value="2">Website Searches</option>
-                        <option value="3">Social Media</option>
-                        <option value="4">Others</option>
+                        <option value="1" selected required>Choose a Subject</option>
+                        <option value="Website Searches" name="option" required>Website Searches</option>
+                        <option value="Social Media" name="option" required>Social Media</option>
+                        <option value="Others" name="option" required>Others</option>
                     </select>
                </section>
                 <section class="big-item">
                     <label for="#">Tell us about the project</label>
-                    <textarea cols="30" rows="10"></textarea>
+                    <textarea cols="30" rows="10" id="cmt" required></textarea>
     
                     <button type="submit">Submit</button>
                 </section>
@@ -185,6 +186,6 @@
 
 
     <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
+   
 </body>
 </html>
